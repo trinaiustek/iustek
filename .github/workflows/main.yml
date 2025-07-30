@@ -10,7 +10,7 @@ on:
     branches:
 
 concurrency:
-  group: schedule-${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:
